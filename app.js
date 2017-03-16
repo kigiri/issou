@@ -1,8 +1,13 @@
 const body = document.getElementsByTagName('body')[0]
+const list = require('./list')
 const h = require('izi/vanilla-h')
-const img = h('img')
-const hr = h('hr', { style: { width: '100%' } })
+
 const a = h('a')
+const hr = h('hr', { style: { width: '100%' } })
+const img = h('img', { style: {
+  maxWidth: '100%',
+  height: 'auto',
+} })
 
 const imgTitle = h('span', { style: {
   position: 'absolute',
@@ -20,7 +25,6 @@ const imgWrapper = h('a', { style: {
   margin: '2px',
 } })
 
-const list = require('./list')
 const image = props => imgWrapper({
   href: `https://www.google.fr/searchbyimage?site=search&image_url=${
     encodeURIComponent(props.src)}`,
