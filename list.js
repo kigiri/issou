@@ -1,119 +1,16 @@
-const stickersSrc = 'http://jv.stkr.fr/p7s/'
+const { range } = require('izi/arr')
 
 module.exports = [
-  'cimer',
-  'ddb',
-  'nyu',
-  'objection',
-  'pave',
-  'pf',
-  'play',
-  'siffle',
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
-  9,
-  10,
-  11,
-  12,
-  13,
-  14,
-  15,
-  17,
-  18,
-  19,
-  20,
-  21,
-  22,
-  23,
-  24,
-  25,
-  26,
-  27,
-  28,
-  29,
-  30,
-  31,
-  32,
-  33,
-  34,
-  35,
-  36,
-  37,
-  38,
-  39,
-  40,
-  41,
-  42,
-  43,
-  44,
-  45,
-  46,
-  47,
-  48,
-  49,
-  50,
-  51,
-  52,
-  53,
-  54,
-  55,
-  56,
-  57,
-  58,
-  59,
-  60,
-  61,
-  62,
-  63,
-  64,
-  65,
-  66,
-  67,
-  68,
-  69,
-  70,
-  71,
-].map(i => ({
+  'cimer', 'ddb', 'nyu', 'objection', 'pave', 'pf', 'play', 'siffle',
+].concat(range(1, 71)).map(i => ({
   src: `http://image.jeuxvideo.com/smileys_img/${i}.gif`,
   width: 16,
   height: 16,
-})).concat([
-  '1lmb',
-  '1kki',
-  '1kkn',
-  '1lmh',
-  '1jnh',
-  '1kkr',
-  '1lm9',
-  '1lmk',
-  '1jnc',
-  '1jnf',
-  '1kks',
-  '1kky',
-  '1jne',
-  '1ljr',
-  '1lmc',
-  '1jng',
-  '1jnj',
-  '1nua',
-  '1kkq',
-  '1ljp',
-  '1ljj',
-  '1kkl',
-  '1mr0',
-  '1kkh',
-  '1lgd',
-  '1kgx',
-  '1kku',
-  '1klb',
+})).concat([ 'lmb', 'kki', 'kkn', 'lmh', 'jnh', 'kkr', 'lm9', 'lmk', 'jnc',
+'jnf', 'kks', 'kky', 'jne', 'ljr', 'lmc', 'jng', 'jnj', 'nua', 'kkq', 'ljp',
+'ljj', 'kkl', 'mr0', 'kkh', 'lgd', 'kgx', 'kku', 'klb',
 ].map(i => ({
-  src: 'http://jv.stkr.fr/p7s/'+ i,
+  src: 'http://jv.stkr.fr/p7s/1'+ i,
   width: 280,
   height: 280,
 }))).concat([
@@ -880,66 +777,3 @@ module.exports = [
   height,
   src: 'http://image.noelshack.com/fichiers/2016/'+ src,
 })))
-
-/*
-  // dead links
-  {
-    src: "24/1466366200-risitas13.png",
-    w: 20,
-    h: 24
-  },
-
-  {
-    src: "24/1466366260-risitas63.png",
-    w: 20,
-    h: 24
-  },
-
-  {
-    src: "38/1474490266-risitas424.png",
-    w: 20,
-    h: 24
-  },
-
-  {
-    src: "38/1474490278-risitas449.png",
-    w: 20,
-    h: 24
-  },
-
-  {
-    src: "38/1474490305-risitas509.png",
-    w: 20,
-    h: 24
-  },
-
-  {
-    src: "38/1474490244-risitas446.png",
-    w: 20,
-    h: 24
-  },
-
-  {
-    src: "38/1474755096-risitas722.png",
-    w: 20,
-    h: 24
-  },
-
-  {
-    src: "32/1470919003-img23.png",
-    w: 20,
-    h: 24
-  },
-
-  {
-    src: "38/1474755058-img7.png",
-    w: 20,
-    h: 24
-  },
-
-  {
-    src: "38/1474755060-img9.png",
-    w: 20,
-    h: 24
-  }
-  */
