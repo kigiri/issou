@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a > span {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+a:hover > span {
+  opacity: 1;
+  transition: opacity 0.1s;
+}
